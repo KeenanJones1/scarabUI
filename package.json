@@ -1,10 +1,12 @@
 {
-  "name": "scarabui",
+  "name": "@keenanjones1/scarab-ui",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "keywords": [],
   "author": "",
@@ -14,14 +16,27 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/",
+    "access":"restricted"
+  },
   "devDependencies": {
     "@babel/core": "^7.24.0",
     "@babel/preset-env": "^7.24.0",
     "@babel/preset-react": "^7.23.3",
+    "@storybook/addon-essentials": "^7.6.17",
+    "@storybook/addon-interactions": "^7.6.17",
+    "@storybook/addon-links": "^7.6.17",
+    "@storybook/addon-onboarding": "^1.0.11",
+    "@storybook/blocks": "^7.6.17",
+    "@storybook/react": "^7.6.17",
+    "@storybook/react-webpack5": "^7.6.17",
+    "@storybook/test": "^7.6.17",
     "babel-loader": "^9.1.3",
     "css-loader": "^6.10.0",
     "sass": "^1.71.1",
     "sass-loader": "^14.1.1",
+    "storybook": "^7.6.17",
     "style-loader": "^3.3.4",
     "webpack": "^5.90.3",
     "webpack-cli": "^5.1.4",
